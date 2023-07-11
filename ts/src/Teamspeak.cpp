@@ -754,7 +754,10 @@ int ts3plugin_apiVersion() {
         case 1: retVersion = 22; break;
         case 2: retVersion = 22; break;
         case 3: retVersion = 23; break;
-        default: retVersion = 23;
+        case 4: retVersion = 23; break;
+        case 5: retVersion = 23; break;
+        // 3.6.0 forces minimum 26
+        default: retVersion = 26;
     }
 
     if (retVersion >= 23) {
